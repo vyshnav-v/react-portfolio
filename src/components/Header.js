@@ -9,7 +9,7 @@ const Header = () => {
           <nav>
             <ul>
               <li className='my-photo-h'>
-                <img 
+                <img
                   className='my-photo-h'
                   src='assets/fundalogo.png'
                   alt=''
@@ -17,7 +17,7 @@ const Header = () => {
                 />{" "}
                 {""}
               </li>
-              <li> 
+              <li>
                 <span className='active' id='home-link'>
                   Home
                 </span>
@@ -34,6 +34,17 @@ const Header = () => {
               {/* <li>
                 <span id='blog-link'>Blog</span>
               </li> */}
+              <li>
+                <a
+                  href=''
+                  target='_blank'
+                  className='btn btn-dark mt-0'
+                >
+                  
+                    Resume <i className=' fa-solid fa-download' />
+                  
+                </a>
+              </li>
             </ul>
           </nav>
         </div>
@@ -64,7 +75,7 @@ const Header = () => {
                 width={30}
               />{" "}
               {""}
-              <span>Vaishnav V</span>
+              
             </li>
             <li>
               <a href='#home'>

@@ -1,10 +1,4 @@
-/*
-Template Name: Salimov - Horizontal Personal Portfolio
-Author: Codeefly
-Author URI: http://themeforest.net/user/Codeefly
-Description: Salimov - Horizontal Personal Portfolio
-Version: 1.0
-*/
+
 
 /*------------------------------------------------------------------
 [Table of contents]
@@ -1085,14 +1079,14 @@ header .mobile-menu {
   font-weight: 500;
 }
 
-.portfolio .single-item .main-content img {
+/* .portfolio .single-item .main-content img {
   width: 650px;
   height: 450px;
   object-fit: cover;
   object-position: center;
   border-radius: 20px;
   cursor: grab;
-}
+} */
 
 .portfolio .single-item .main-content .external {
   display: block;
@@ -1105,6 +1099,75 @@ header .mobile-menu {
 .portfolio .single-item .main-content {
   width: 650px;
   height: 450px;
+}
+.portfolio .single-item .main-content {
+  position: relative;
+  width: 650px;
+  height: 450px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.portfolio .single-item .main-content img {
+   width: 650px;
+  height: 450px;
+  object-fit: cover;
+  object-position: center;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: transform 0.3s ease; /* Add a smooth transition for zoom effect */
+}
+
+.portfolio .single-item .main-content .image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Set the desired background color with some transparency */
+  color: #fff; /* Set the text color */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0; /* Initially set the overlay to be transparent */
+  transition: opacity 0.3s ease; /* Add a smooth transition for opacity changes */
+}
+
+.portfolio .single-item .main-content:hover img {
+  transform: scale(1.1); /* Zoom in the image on hover */
+}
+
+.portfolio .single-item .main-content:hover .image-overlay {
+  opacity: 1; /* Show the overlay when hovering over the image */
+}
+
+.portfolio .single-item .main-content strong {
+  display: block;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.portfolio .single-item .main-content a {
+  color: #fff;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.portfolio .single-item .main-content a:hover {
+  text-decoration: underline;
+}
+.project-details span {
+  display: block;
+  margin-left: 20px;
+  position: relative;
+}
+
+.project-details span::before {
+  content: "\2022"; /* Unicode for bullet (•) */
+  position: absolute;
+  left: -15px;
+  top: 5px;
 }
 
 .videocontainer {
