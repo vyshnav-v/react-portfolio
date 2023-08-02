@@ -34,17 +34,8 @@ const Header = () => {
               {/* <li>
                 <span id='blog-link'>Blog</span>
               </li> */}
-              <li>
-                <a
-                  href=''
-                  target='_blank'
-                  className='btn btn-dark mt-0'
-                >
-                  
-                    Resume <i className=' fa-solid fa-download' />
-                  
-                </a>
-              </li>
+
+              <li></li>
             </ul>
           </nav>
         </div>
@@ -52,8 +43,13 @@ const Header = () => {
         {/* FREELANCE STARTS */}
         <div className='mail'>
           <p>
-            Email : {""}
-            <span>vaishnavvenugopal706@gmail.com</span>
+            <a
+              href='assets\resume\VaishnavVMERNStackDeveloper.pdf'
+              target='_blank'
+              className='btn btn-dark mt-0'
+            >
+              Resume <i className=' fa-solid fa-download' />
+            </a>
           </p>
         </div>
         {/* FREELANCE ENDS */}
@@ -75,7 +71,6 @@ const Header = () => {
                 width={30}
               />{" "}
               {""}
-              
             </li>
             <li>
               <a href='#home'>
