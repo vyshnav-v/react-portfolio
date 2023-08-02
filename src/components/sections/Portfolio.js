@@ -37,7 +37,7 @@ const Portfolio = () => {
               />
               <div className='image-overlay'>
                 {" "}
-                <div class='project-details'>
+                <div className='project-details'>
                   <span>
                     Implemented all the necessary e-commerce functionalities
                     like product listing, cart, orders, etc.
@@ -118,7 +118,7 @@ const Portfolio = () => {
               />
 
               <div className='image-overlay'>
-                <div class='project-details'>
+                <div className='project-details'>
                   <span>
                     {" "}
                     Waste managementinvolves the processes of waste
@@ -206,7 +206,7 @@ const Portfolio = () => {
                 alt='Image Project'
               />
               <div className='image-overlay'>
-                <div class='project-details'>
+                <div className='project-details'>
                   <span>
                     Designed and developed a visually appealing front-end for a
                     website project for an eye hospital.
@@ -303,7 +303,7 @@ const Portfolio = () => {
                 alt='Image Project'
               />
               <div className='image-overlay'>
-                <div class='project-details'>
+                <div className='project-details'>
                   <span>
                     Designed and developed a visually appealing front-end for a
                     website project for an eye hospital.
@@ -400,7 +400,7 @@ const Portfolio = () => {
                 alt='Image Project'
               />
               <div className='image-overlay'>
-                <div class='project-details'>
+                <div className='project-details'>
                   <span>
                     Leveraged React,Node.js,Redux Toolkit,MaterialUI, and
                     Tailwind CSS to build a feature-rich and visually appealing
@@ -490,7 +490,7 @@ const Portfolio = () => {
                 alt='Image Project'
               />
               <div className='image-overlay'>
-                <div class='project-details'>
+                <div className='project-details'>
                   <span>
                     Itis a simple web application that would help you manage
                     your sticker notes efficiently and elegantly
@@ -563,57 +563,7 @@ const Portfolio = () => {
 
         {/* PORTFOLIO ITEM ENDS */}
         {/* PORTFOLIO ITEM STARTS */}
-        <SwiperSlide className='single-item swiper-slide'>
-          {/* ITEM MAIN CONTENT STARTS */}
-          <div className='main-content'>
-            <div className='videocontainer'>
-              <iframe
-                className='youtube-video'
-                src='https://www.youtube.com/embed/AqcjdkPMPJA?enablejsapi=1&version=3&playerapiid=ytplayer'
-                allowFullScreen=''
-              />
-            </div>
-          </div>
-          {/* ITEM MAIN CONTENT ENDS */}
-          {/* ITEM DETAILS STARTS */}
-          <div className='details'>
-            <h4>Youtube Project</h4>
-            <div>
-              <ul>
-                <li>
-                  <span>
-                    <i className='fa-regular fa-file-lines' /> Project :
-                  </span>
-                  <span>Short Film</span>
-                </li>
-                <li>
-                  <span>
-                    <i className='fa-regular fa-user' /> Client :
-                  </span>
-                  <span>Videohive</span>
-                </li>
-                <li>
-                  <span>
-                    <i className='fa-regular fa-hourglass' /> Duration :
-                  </span>
-                  <span>8 months</span>
-                </li>
-                <li>
-                  <span>
-                    <i className='fa-solid fa-code-branch' /> Frameworks :
-                  </span>
-                  <span>After Effects</span>
-                </li>
-              </ul>
-            </div>
-            <a href='#' target='_blank' className='custom-btn'>
-              <span>
-                preview <i className='fa-solid fa-arrow-up-right-from-square' />
-              </span>
-            </a>
-          </div>
-          {/* ITEM DETAILS ENDS */}
-        </SwiperSlide>
+      
         {/* PORTFOLIO ITEM ENDS */}
 
         <div className='nav-item next-item animated-btn'>
