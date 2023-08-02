@@ -22,10 +22,10 @@ const SalimovHead = () => {
       <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css" />
       <link rel="stylesheet" href="css/style.css" />
       {/* CSS Skin File */}
-      {/* <link rel="stylesheet" href="css/skins/yellow.css" /> */}
+      <link rel="stylesheet" href="css/skins/yellow.css" />
       {/* Live Style Switcher - demo only */}
 
-      <link rel="stylesheet" type="text/css" href="css/styleswitcher.css" />
+      <link rel="stylesheet"  href="css/styleswitcher.css" />
     </Head>
   );
 };

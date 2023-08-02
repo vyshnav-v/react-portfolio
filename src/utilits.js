@@ -35,21 +35,37 @@ export const jqueryFuntion = () => {
     /*  SET ACTIVE MENU ITEM ON SCROLL
     /* ----------------------------------------------------------- */
 
-    var homewidth = $(".home").width() - 10;
-    var aboutwidth = homewidth + $(".about").width() + $(".facts").width() - 10;
-    var portfoliowidth =
-      aboutwidth +
-      $(".portfolio .single-item .main-content").width() +
-      $(".portfolio .single-item .details").width() +
-      250 +
-      65 +
-      300 +
-      $(".clients").width() -
-      10;
-    var contactwidth =
-      portfoliowidth + $(".contact").width() + $(".testimonials").width() - 10;
-    var blogwidth =
-      contactwidth + $(".blog").width() + $(".copyright").width() - 10;
+    // var homewidth = $(".home").width() - 10;
+    // var aboutwidth = homewidth + $(".about").width() + $(".facts").width() - 10;
+    // var portfoliowidth =
+    //   aboutwidth +
+    //   $(".portfolio .single-item .main-content").width() +
+    //   $(".portfolio .single-item .details").width() +
+    //   250 +
+    //   65 +
+    //   300 +
+    //   $(".clients").width() -
+    //   10;
+    // var contactwidth =
+    //   portfoliowidth + $(".contact").width() + $(".testimonials").width() - 10;
+    // var blogwidth =
+    //   contactwidth + $(".blog").width() + $(".copyright").width() - 10;
+     var homewidth = $(".home").width() - 10;
+     var aboutwidth =
+       homewidth + $(".about").width() - 10;
+     var portfoliowidth =
+       aboutwidth +
+       $(".portfolio .single-item .main-content").width() +
+       $(".portfolio .single-item .details").width() +
+       250 +
+       65 +
+       300 +
+        -
+       10;
+     var contactwidth =
+       portfoliowidth + $(".contact").width()  - 10;
+     var blogwidth =
+       contactwidth + $(".copyright").width() - 10;
 
     /* ----------------------------------------------------------- */
     /*  HORIZONTAL SCROLL & REVEAL ANIMATIONS

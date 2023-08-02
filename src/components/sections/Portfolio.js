@@ -104,9 +104,13 @@ const Portfolio = () => {
               src='assets/portfolio/project-3.jpg'
               alt='Image Project'
             />
-            Implemented allthe necessary e-commerce functionalities like
-            productlisting, cart, orders, etc.
-            <strong> Payment gateways integrated: paypal</strong>
+            Waste managementinvolves the processes of waste
+            collection,transportation, processing, as well as waste recycling or
+            disposal. In this site users can book correspondent agentto
+            collecttheir waste. Agencies collectthe waste as perthe details and
+            location provided by the user. Super admin can control users and
+            agencies. etc.
+            {/* <strong> Payment gateways integrated: paypal</strong> */}
           </div>
           {/* ITEM MAIN CONTENT ENDS */}
           {/* ITEM DETAILS STARTS */}
@@ -137,13 +141,14 @@ const Portfolio = () => {
                     <i className='fa-solid fa-code-branch' /> Frameworks :
                   </span>
                   <span>
-                    React, Node.js, Express.js,
-                    <br />Redux toolkit, MongoDBand EJS,Bootstrap,Nginx , EC2
+                    ReactJs,Node.js, Express.js,
+                    <br />
+                    MongoDB,Redux Tool kit,MUI,Tailwind,jwt,Axios..
                   </span>
                 </li>
               </ul>
             </div>
-            <a
+            {/* <a
               href='https://zycaz.shop/'
               target='_blank'
               className='custom-btn'
@@ -151,9 +156,9 @@ const Portfolio = () => {
               <span>
                 preview <i className='fa-solid fa-arrow-up-right-from-square' />
               </span>
-            </a>
+            </a> */}
             <a
-              href='https://github.com/vyshnav-v/zycaz'
+              href='https://github.com/vyshnav-v/MERN-Green-Zone'
               target='_blank'
               className='custom-btn'
             >
@@ -166,118 +171,10 @@ const Portfolio = () => {
         </SwiperSlide>
         {/* PORTFOLIO ITEM ENDS */}
         {/* PORTFOLIO ITEM STARTS */}
-        <SwiperSlide className='single-item swiper-slide'>
-          {/* ITEM MAIN CONTENT STARTS */}
-          <div className='main-content'>
-            <div className='videocontainer'>
-              <iframe
-                className='youtube-video'
-                src='https://www.youtube.com/embed/AqcjdkPMPJA?enablejsapi=1&version=3&playerapiid=ytplayer'
-                allowFullScreen=''
-              />
-            </div>
-          </div>
-          {/* ITEM MAIN CONTENT ENDS */}
-          {/* ITEM DETAILS STARTS */}
-          <div className='details'>
-            <h4>Youtube Project</h4>
-            <div>
-              <ul>
-                <li>
-                  <span>
-                    <i className='fa-regular fa-file-lines' /> Project :
-                  </span>
-                  <span>Short Film</span>
-                </li>
-                <li>
-                  <span>
-                    <i className='fa-regular fa-user' /> Client :
-                  </span>
-                  <span>Videohive</span>
-                </li>
-                <li>
-                  <span>
-                    <i className='fa-regular fa-hourglass' /> Duration :
-                  </span>
-                  <span>8 months</span>
-                </li>
-                <li>
-                  <span>
-                    <i className='fa-solid fa-code-branch' /> Frameworks :
-                  </span>
-                  <span>After Effects</span>
-                </li>
-              </ul>
-            </div>
-            <a href='#' target='_blank' className='custom-btn'>
-              <span>
-                preview <i className='fa-solid fa-arrow-up-right-from-square' />
-              </span>
-            </a>
-          </div>
-          {/* ITEM DETAILS ENDS */}
-        </SwiperSlide>
+        
         {/* PORTFOLIO ITEM ENDS */}
         {/* PORTFOLIO ITEM STARTS */}
-        <SwiperSlide className='single-item swiper-slide'>
-          {/* ITEM MAIN CONTENT STARTS */}
-          <div className='main-content'>
-            <Swiper
-              {...salimovSlider.portfolioItems}
-              className='swiper swiper-portfolio-item'
-            >
-              <SwiperSlide className='swiper-slide'>
-                <img src='assets/portfolio/project-2.jpg' title='img' />
-              </SwiperSlide>
-              <SwiperSlide className='swiper-slide'>
-                <img src='assets/portfolio/project-3.jpg' title='img' />
-              </SwiperSlide>
-              <SwiperSlide className='swiper-slide'>
-                <img src='assets/portfolio/project-1.jpg' title='img' />
-              </SwiperSlide>
-              <div className='swiper-pagination' />
-            </Swiper>
-          </div>
-          {/* ITEM MAIN CONTENT ENDS */}
-          {/* ITEM DETAILS STARTS */}
-          <div className='details'>
-            <h4>Slider Project</h4>
-            <div>
-              <ul>
-                <li>
-                  <span>
-                    <i className='fa-regular fa-file-lines' /> Project :
-                  </span>
-                  <span>Mobile App</span>
-                </li>
-                <li>
-                  <span>
-                    <i className='fa-regular fa-user' /> Client :
-                  </span>
-                  <span>Codecanyon</span>
-                </li>
-                <li>
-                  <span>
-                    <i className='fa-regular fa-hourglass' /> Duration :
-                  </span>
-                  <span>3 months</span>
-                </li>
-                <li>
-                  <span>
-                    <i className='fa-solid fa-code-branch' /> Frameworks :
-                  </span>
-                  <span>React JS</span>
-                </li>
-              </ul>
-            </div>
-            <a href='#' target='_blank' className='custom-btn'>
-              <span>
-                preview <i className='fa-solid fa-arrow-up-right-from-square' />
-              </span>
-            </a>
-          </div>
-          {/* ITEM DETAILS ENDS */}
-        </SwiperSlide>
+       
         {/* PORTFOLIO ITEM ENDS */}
         {/* PORTFOLIO ITEM STARTS */}
         <SwiperSlide className='single-item swiper-slide'>

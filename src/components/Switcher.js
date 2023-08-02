@@ -17,23 +17,22 @@ const Switcher = () => {
   return (
     <Fragment>
       <Head>
-        <link rel="stylesheet" href={`css/skins/${color}.css`} />
+        <link rel='stylesheet' href={`css/skins/${color}.css`} />
       </Head>
       <div
-        id="switcher"
+        id='switcher'
         className={toggle ? "open" : "close"}
         style={{ display: "block" }}
       >
-        <div className="content-switcher">
+        <div className='content-switcher'>
           <h4>COLOR SWITCHER</h4>
           <ul>
             {colors.map((color) => (
-              <li>
+              <li key={color.id}>
                 <a
-                  href="#"
+                  href='#'
                   title={color.name}
-                  className="color"
-                  key={color.id}
+                  className='color'
                   onClick={() => setColor(color.name)}
                 >
                   <img
@@ -44,17 +43,17 @@ const Switcher = () => {
               </li>
             ))}
           </ul>
-          <div id="hideSwitcher" onClick={() => setToggle(false)}>
+          <div id='hideSwitcher' onClick={() => setToggle(false)}>
             ×
           </div>
         </div>
       </div>
       <div
-        id="showSwitcher"
+        id='showSwitcher'
         className={`styleSecondColor ${toggle ? "close" : "open"}`}
         onClick={() => setToggle(true)}
       >
-        <i className="fa fa-cog" />
+        <i className='fa fa-cog' />
       </div>
     </Fragment>
   );

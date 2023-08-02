@@ -2,107 +2,7 @@ const About = () => {
   return (
     <section className='about main-section flex-column-mobile' id='about'>
       {/* INFO HOLDER STARTS */}
-      <div className='info flex-column-mobile'>
-        {/* IMAGE STARTS */}
-        <div
-          className='img-container animated-layer image-animation my-photo-container fadeInUp wow'
-          data-wow-offset={200}
-          id='my-photo'
-        >
-          <div>
-            <div>
-              <img className='my-photo' src='assets/about.jpg' alt='' />
-            </div>
-          </div>
-        </div>
-        {/* IMAGE ENDS */}
-        {/* INFO STARTS */}
-        <div>
-          <h2>
-            <span>
-              <span className='animated-layer fade-in-up-animation fadeInUp wow'>
-                Vaishnav
-              </span>
-            </span>
-            <span>
-              <span className='animated-layer fade-in-up-animation fadeInUp wow'>
-                Venugopal
-              </span>
-            </span>
-          </h2>
-          <div className='infos'>
-            <ul>
-              <li>
-                <span>
-                  <span className='animated-layer fade-in-up-animation fadeInUp wow'>
-                    <span>Age :</span>
-                    <span>26 Years</span>
-                  </span>
-                </span>
-              </li>
-              <li>
-                <span>
-                  <span className='animated-layer fade-in-up-animation fadeInUp wow'>
-                    <span>Nationality :</span>
-                    <span>Indian</span>
-                  </span>
-                </span>
-              </li>
-              <li>
-                <span>
-                  <span className='animated-layer fade-in-up-animation fadeInUp wow'>
-                    <span>Freelance :</span>
-                    <span>Available</span>
-                  </span>
-                </span>
-              </li>
-              <li>
-                <span>
-                  <span className='animated-layer fade-in-up-animation fadeInUp wow'>
-                    <span>Langages :</span>
-                    <span>English, Malayalam</span>
-                  </span>
-                </span>
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <span>
-                  <span className='animated-layer fade-in-up-animation fadeInUp wow'>
-                    <span>Address :</span>
-                    <span>Kerala</span>
-                  </span>
-                </span>
-              </li>
-              <li>
-                <span>
-                  <span className='animated-layer fade-in-up-animation fadeInUp wow'>
-                    <span>Phone :</span>
-                    <span>+91 7736473741</span>
-                  </span>
-                </span>
-              </li>
-              <li>
-                <span>
-                  <span className='animated-layer fade-in-up-animation fadeInUp wow'>
-                    <span>Email :</span>
-                    <span>vaishnavvenugopal706@gmail.com</span>
-                  </span>
-                </span>
-              </li>
-              {/* <li>
-                <span>
-                  <span className='animated-layer fade-in-up-animation fadeInUp wow'>
-                    <span>Skype :</span>
-                    <span>steven.walker</span>
-                  </span>
-                </span>
-              </li> */}
-            </ul>
-          </div>
-        </div>
-        {/* INFO ENDS */}
-      </div>
+
       {/* INFO HOLDER ENDS */}
       {/* SKILLS STARTS */}
       <div className='skills flex-column-mobile'>
@@ -295,7 +195,7 @@ const About = () => {
             <li>
               <div className='animated-layer fade-in-up-animation fadeInUp wow'>
                 <div className='experience'>
-                  <h4>Full s</h4>
+                  <h4>Full Stack Developer</h4>
                   <p>
                     <i className='fa-regular fa-clock' />
                     <span>mar 2023 - Aug 2023</span>
@@ -311,14 +211,14 @@ const About = () => {
             {/* TIMELINE ITEM STARTS */}
             <li>
               <div className='animated-layer fade-in-down-animation fadeInUp wow'>
-                <div className='experience'>
+                <div className='education'>
                   <h4>Trainee</h4>
                   <p>
                     <i className='fa-regular fa-clock' />
                     <span>Aug 2022 - Feb 2023</span>
                   </p>
                   <p>
-                    <i className='fa-regular fa-building' />
+                    <i className='fa-solid fa-building-columns' />
                     <span>Brototype</span>
                   </p>
                 </div>
@@ -328,14 +228,14 @@ const About = () => {
             {/* TIMELINE ITEM STARTS */}
             <li>
               <div className='animated-layer fade-in-up-animation fadeInUp wow'>
-                <div className='education'>
+                <div className='experience'>
                   <h4>Assistant Manager</h4>
                   <p>
                     <i className='fa-regular fa-clock' />
                     <span> Mar 2020- Jul 2022</span>
                   </p>
                   <p>
-                    <i className='fa-solid fa-building-columns' />
+                    <i className='fa-regular fa-building' />
                     <span>AiroTrack Technologies </span>
                   </p>
                 </div>

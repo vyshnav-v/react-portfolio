@@ -8,17 +8,16 @@ const Header = () => {
         <div className='menu'>
           <nav>
             <ul>
-              <li>
-                <img
-                  className='my-photo'
+              <li className='my-photo-h'>
+                <img 
+                  className='my-photo-h'
                   src='assets/fundalogo.png'
                   alt=''
-                  width={30}
+                  width={60}
                 />{" "}
                 {""}
-                {/* <span>Vaishnav V</span> */}
               </li>
-              <li>
+              <li> 
                 <span className='active' id='home-link'>
                   Home
                 </span>
@@ -27,14 +26,14 @@ const Header = () => {
                 <span id='about-link'>About</span>
               </li>
               <li>
-                <span id='portfolio-link'>Portfolio</span>
+                <span id='portfolio-link'>Documentaions</span>
               </li>
               <li>
                 <span id='contact-link'>Contact</span>
               </li>
-              <li>
+              {/* <li>
                 <span id='blog-link'>Blog</span>
-              </li>
+              </li> */}
             </ul>
           </nav>
         </div>
@@ -79,7 +78,7 @@ const Header = () => {
             </li>
             <li>
               <a href='#portfolio'>
-                <span>Portfolio</span>
+                <span>Documentaions</span>
               </a>
             </li>
             <li>
@@ -87,11 +86,11 @@ const Header = () => {
                 <span>Contact</span>
               </a>
             </li>
-            <li>
+            {/* <li>
               <a href='#blog'>
                 <span>Blog</span>
               </a>
-            </li>
+            </li> */}
           </ul>
         </div>
       </nav>
