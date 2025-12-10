@@ -31,9 +31,27 @@ const About = () => {
             {/* SKILL ITEM STARTS */}
             <div className='animated-layer fade-in-down-animation fadeInLeft wow'>
               <span>
-                <i className='devicon-mongodb-plain' />
+                <i className='devicon-react-original' />
               </span>
-              <h4>MongoDB</h4>
+              <h4>React / React Native</h4>
+            </div>
+            {/* SKILL ITEM ENDS */}
+            {/* SKILL ITEM STARTS */}
+            <div className='animated-layer fade-in-up-animation fadeInRight wow'>
+              <span>
+                <i className='devicon-nextjs-original' />
+              </span>
+              <h4>Next.js</h4>
+            </div>
+            {/* SKILL ITEM ENDS */}
+          </div>
+          <div>
+            {/* SKILL ITEM STARTS */}
+            <div className='animated-layer fade-in-down-animation fadeInLeft wow'>
+              <span>
+                <i className='devicon-typescript-plain' />
+              </span>
+              <h4>TypeScript</h4>
             </div>
             {/* SKILL ITEM ENDS */}
             {/* SKILL ITEM STARTS */}
@@ -49,35 +67,35 @@ const About = () => {
             {/* SKILL ITEM STARTS */}
             <div className='animated-layer fade-in-down-animation fadeInLeft wow'>
               <span>
-                <i className='devicon-express-original' />
+                <i className='devicon-nodejs-plain' />
               </span>
-              <h4>Express JS</h4>
+              <h4>Node.js</h4>
             </div>
             {/* SKILL ITEM ENDS */}
             {/* SKILL ITEM STARTS */}
             <div className='animated-layer fade-in-up-animation fadeInRight wow'>
+              <span>
+                <i className='devicon-express-original' />
+              </span>
+              <h4>Express.js</h4>
+            </div>
+            {/* SKILL ITEM ENDS */}
+          </div>
+          <div>
+            {/* SKILL ITEM STARTS */}
+            <div className='animated-layer fade-in-down-animation fadeInLeft wow'>
               <span>
                 <i className='devicon-redux-original' />
               </span>
-              <h4>Redux</h4>
-            </div>
-            {/* SKILL ITEM ENDS */}
-          </div>
-          <div>
-            {/* SKILL ITEM STARTS */}
-            <div className='animated-layer fade-in-down-animation fadeInLeft wow'>
-              <span>
-                <i className='devicon-react-plain' />
-              </span>
-              <h4>React JS</h4>
+              <h4>Redux / Zustand</h4>
             </div>
             {/* SKILL ITEM ENDS */}
             {/* SKILL ITEM STARTS */}
             <div className='animated-layer fade-in-up-animation fadeInRight wow'>
               <span>
-                <i className='devicon-git-plain' />
+                <i className='devicon-mongodb-plain' />
               </span>
-              <h4>Git</h4>
+              <h4>MongoDB</h4>
             </div>
             {/* SKILL ITEM ENDS */}
           </div>
@@ -85,53 +103,35 @@ const About = () => {
             {/* SKILL ITEM STARTS */}
             <div className='animated-layer fade-in-down-animation fadeInLeft wow'>
               <span>
-                <i className='devicon-nodejs-plain' />
+                <i className='devicon-postgresql-plain' />
               </span>
-              <h4>Node JS</h4>
+              <h4>PostgreSQL / Supabase</h4>
             </div>
             {/* SKILL ITEM ENDS */}
             {/* SKILL ITEM STARTS */}
             <div className='animated-layer fade-in-up-animation fadeInRight wow'>
-              <span>
-                <i className='devicon-html5-plain' />
-              </span>
-              <h4>HTML5</h4>
-            </div>
-            {/* SKILL ITEM ENDS */}
-          </div>
-          <div>
-            {/* SKILL ITEM STARTS */}
-            <div className='animated-layer fade-in-down-animation fadeInLeft wow'>
-              <span>
-                <i className='devicon-mysql-plain' />
-              </span>
-              <h4>SQL</h4>
-            </div>
-            {/* SKILL ITEM ENDS */}
-            {/* SKILL ITEM STARTS */}
-            <div className='animated-layer fade-in-up-animation fadeInRight wow'>
-              <span>
-                <i className='devicon-css3-plain' />
-              </span>
-              <h4>CSS3</h4>
-            </div>
-            {/* SKILL ITEM ENDS */}
-          </div>
-          <div>
-            {/* SKILL ITEM STARTS */}
-            <div className='animated-layer fade-in-down-animation fadeInLeft wow'>
               <span>
                 <i className='devicon-firebase-plain' />
               </span>
               <h4>Firebase</h4>
             </div>
             {/* SKILL ITEM ENDS */}
+          </div>
+          <div>
+            {/* SKILL ITEM STARTS */}
+            <div className='animated-layer fade-in-down-animation fadeInLeft wow'>
+              <span>
+                <i className='devicon-tailwindcss-plain' />
+              </span>
+              <h4>Tailwind CSS</h4>
+            </div>
+            {/* SKILL ITEM ENDS */}
             {/* SKILL ITEM STARTS */}
             <div className='animated-layer fade-in-up-animation fadeInRight wow'>
               <span>
-                <i className='devicon-nginx-original' />
+                <i className='devicon-materialui-plain' />
               </span>
-              <h4>NginX</h4>
+              <h4>MUI / Shadcn</h4>
             </div>
             {/* SKILL ITEM ENDS */}
           </div>
@@ -139,17 +139,17 @@ const About = () => {
             {/* SKILL ITEM STARTS */}
             <div className='animated-layer fade-in-down-animation fadeInLeft wow'>
               <span>
-                <i className='devicon-materialui-plain' />
+                <i className='devicon-git-plain' />
               </span>
-              <h4>MaterialUI</h4>
+              <h4>Git / GitHub</h4>
             </div>
             {/* SKILL ITEM ENDS */}
             {/* SKILL ITEM STARTS */}
             <div className='animated-layer fade-in-up-animation fadeInRight wow'>
               <span>
-                <i className='devicon-tailwindcss-plain' />
+                <i className='devicon-docker-plain' />
               </span>
-              <h4>TailwindCSS</h4>
+              <h4>Docker / CI/CD</h4>
             </div>
             {/* SKILL ITEM ENDS */}
           </div>
@@ -178,14 +178,14 @@ const About = () => {
             <li>
               <div className='animated-layer fade-in-down-animation fadeInUp wow'>
                 <div className='experience'>
-                  <h4>Freelance</h4>
+                  <h4>React Native Developer</h4>
                   <p>
                     <i className='fa-regular fa-clock' />
-                    <span>Aug 2023 - Now</span>
+                    <span>May 2025 - Present</span>
                   </p>
                   <p>
                     <i className='fa-regular fa-building' />
-                    <span>Web Development</span>
+                    <span>FIES System</span>
                   </p>
                 </div>
               </div>
@@ -194,32 +194,32 @@ const About = () => {
             {/* TIMELINE ITEM STARTS */}
             <li>
               <div className='animated-layer fade-in-up-animation fadeInUp wow'>
+                <div className='experience'>
+                  <h4>React JS Developer</h4>
+                  <p>
+                    <i className='fa-regular fa-clock' />
+                    <span>Aug 2023 - Apr 2025</span>
+                  </p>
+                  <p>
+                    <i className='fa-regular fa-building' />
+                    <span>Dot In Technologies</span>
+                  </p>
+                </div>
+              </div>
+            </li>
+            {/* TIMELINE ITEM ENDS */}
+            {/* TIMELINE ITEM STARTS */}
+            <li>
+              <div className='animated-layer fade-in-down-animation fadeInUp wow'>
                 <div className='experience'>
                   <h4>Full Stack Developer</h4>
                   <p>
                     <i className='fa-regular fa-clock' />
-                    <span>mar 2023 - Aug 2023</span>
+                    <span>Dec 2022 - Aug 2023</span>
                   </p>
                   <p>
                     <i className='fa-regular fa-building' />
-                    <span>TL Technologies pvt ltd</span>
-                  </p>
-                </div>
-              </div>
-            </li>
-            {/* TIMELINE ITEM ENDS */}
-            {/* TIMELINE ITEM STARTS */}
-            <li>
-              <div className='animated-layer fade-in-down-animation fadeInUp wow'>
-                <div className='education'>
-                  <h4>Trainee</h4>
-                  <p>
-                    <i className='fa-regular fa-clock' />
-                    <span>Aug 2022 - Feb 2023</span>
-                  </p>
-                  <p>
-                    <i className='fa-solid fa-building-columns' />
-                    <span>Brototype</span>
+                    <span>TL Technologies Pvt Ltd</span>
                   </p>
                 </div>
               </div>
@@ -228,15 +228,15 @@ const About = () => {
             {/* TIMELINE ITEM STARTS */}
             <li>
               <div className='animated-layer fade-in-up-animation fadeInUp wow'>
-                <div className='experience'>
-                  <h4>Assistant Manager</h4>
+                <div className='education'>
+                  <h4>Trainee - MERN Stack</h4>
                   <p>
                     <i className='fa-regular fa-clock' />
-                    <span> Mar 2020- Jul 2022</span>
+                    <span>Jul 2022 - Dec 2022</span>
                   </p>
                   <p>
-                    <i className='fa-regular fa-building' />
-                    <span>AiroTrack Technologies </span>
+                    <i className='fa-solid fa-building-columns' />
+                    <span>Packageer Academy</span>
                   </p>
                 </div>
               </div>
@@ -245,15 +245,15 @@ const About = () => {
             {/* TIMELINE ITEM STARTS */}
             <li>
               <div className='animated-layer fade-in-down-animation fadeInUp wow'>
-                <div className='education'>
-                  <h4>Bachelor Degree</h4>
+                <div className='experience'>
+                  <h4>Technical Support Engineer</h4>
                   <p>
                     <i className='fa-regular fa-clock' />
-                    <span>2015 - 2019</span>
+                    <span>Mar 2020 - Feb 2022</span>
                   </p>
                   <p>
-                    <i className='fa-solid fa-building-columns' />
-                    <span>GEC Wayanad</span>
+                    <i className='fa-regular fa-building' />
+                    <span>Airo Track Technologies</span>
                   </p>
                 </div>
               </div>

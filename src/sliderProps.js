@@ -22,15 +22,10 @@ SwiperCore.use([
 export const salimovSlider = {
   portfolio: {
     loop: true,
-    navigation: {
-      nextEl: ".next-item",
-      prevEl: ".prev-item",
-    },
     breakpoints: {
       320: {
         slidesPerView: 1.2,
         spaceBetween: 30,
-        navigation: false,
       },
       768: {
         slidesPerView: "auto",
