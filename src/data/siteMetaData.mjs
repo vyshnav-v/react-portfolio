@@ -1,0 +1,27 @@
+export const siteMetadata = {
+  title: "Vaishnav V portfolio",
+  author: "Vaishnav V",
+  headerTitle: "Vaishnav V",
+  description:
+    "Web and App Developer specializing in React.js, React Native, and Next.js",
+  language: "en-us",
+  theme: "light",
+  siteName: "vaishnav-v.dev",
+  siteUrl: "https://vaishnav-v.dev",
+  siteRepo: "https://github.com/vyshnay-v/portfolio-v2",
+  siteLogo: "/favicon.svg",
+  image: "/static/homepage.png",
+  twitterImage: "/static/homepage.png",
+  socialBanner: "/static/homepage.png",
+  email: "vaishnavvenugopal706@gmail.com",
+  phone: "+91 7736473741",
+  address: "Kochi, Kerala, India",
+  github: "https://github.com/vyshnay-v",
+  twitter: "https://twitter.com/vaishnavv",
+  linkedin: "https://www.linkedin.com/in/vaishnav-v",
+  instagram: "https://www.instagram.com/h_a.d.e_s?igsh=ejkwdmxjMjl2aDMz",
+  facebook:
+    "https://www.facebook.com/people/Vaishnav-VenuGopal/100011380357359/?rdid=oRIFBtDRMHRbs6gm&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F17ehRoWSvK%2F",
+  locale: "en-US",
+  googleSiteVerification: "_YJlO90eSoye2AQOhbkRAzNbejzCGiTgAD4RNR3NtHc",
+};
