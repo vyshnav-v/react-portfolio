@@ -1,3 +1,5 @@
+"use client";
+
 import { RefObject, useRef } from "react";
 import Link from "next/link";
 

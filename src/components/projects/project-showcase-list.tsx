@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 
 import { motion } from "framer-motion";
@@ -24,7 +26,7 @@ export interface ProjectShowcaseListProps {
 export default function ProjectShowcaseList(props: ProjectShowcaseListProps) {
   return (
     <motion.div
-      className={classNames("group flex gap-4 ")}
+      className={classNames("group flex gap-4")}
       onHoverStart={() => props.toggleList(props.data.index)}
       onFocus={() => props.toggleList(props.data.index)}
     >

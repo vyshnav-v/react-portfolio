@@ -1,5 +1,7 @@
+"use client";
+
 import { Dispatch, Fragment, SetStateAction } from "react";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import { usePathname } from "next/navigation";
 
 import { Dialog, Transition } from "@headlessui/react";

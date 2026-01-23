@@ -1,10 +1,9 @@
 # Install dependencies
 FROM node:20.10-bookworm-slim as Dependencies
 WORKDIR /app
-COPY package.json pnpm-lock.yaml ./
-RUN npm install -g pnpm
-RUN pnpm install
-RUN pnpm install sharp
+COPY package.json yarn.lock ./
+RUN corepack enable && corepack prepare yarn@stable --activate
+RUN yarn install --frozen-lockfile
 
 # Building standalone app
 FROM node:20.10-bookworm-slim as Builder
@@ -13,7 +12,7 @@ COPY --from=Dependencies /app/node_modules ./node_modules
 COPY . .
 ENV NEXT_TELEMETRY_DISABLED 1
 ENV BUILD_STANDALONE true
-RUN npm run build
+RUN yarn build
 
 # Runner only copies required files to final image to keep the final image size minimum
 FROM node:20.10-bookworm-slim as Runner

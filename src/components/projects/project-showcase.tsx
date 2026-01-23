@@ -1,3 +1,5 @@
+"use client";
+
 import { useMemo, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -30,7 +32,7 @@ export default function ProjectShowcase(props: ProjectShowcaseProps) {
   };
 
   return (
-    <section className="overflow-hidden px-6 pt-16 pb-32 sm:px-14 md:px-20">
+    <section className="overflow-hidden px-6 pb-32 pt-16 sm:px-14 md:px-20">
       <div className="relative mx-auto max-w-7xl">
         <div className="relative right-0 top-0 hidden lg:block">
           <AnimatePresence>

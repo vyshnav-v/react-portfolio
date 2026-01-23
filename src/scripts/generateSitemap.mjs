@@ -8,26 +8,58 @@ async function generateSitemap() {
     "../../prettier.config.js",
   );
 
-  const pages = await globby([
+  // Get pages from App Router (src/app)
+  const appPages = await globby([
+    "src/app/**/page.tsx",
+    "src/app/**/route.ts",
+    "!src/app/**/layout.tsx",
+    "!src/app/**/template.tsx",
+    "!src/app/**/loading.tsx",
+    "!src/app/**/error.tsx",
+    "!src/app/**/not-found.tsx",
+  ]);
+
+  // Also check for legacy Pages Router (if any remain)
+  const legacyPages = await globby([
     "src/pages/**/*.tsx",
     "!src/pages/_*.tsx",
     "!src/pages/api",
     "!src/pages/404.tsx",
   ]);
 
+  const allPages = [...appPages, ...legacyPages];
+
   const sitemap = `
     <?xml version="1.0" encoding="UTF-8"?>
         <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-            ${pages
+            ${allPages
       .map((page) => {
-        const path = page
+        let path = page
           .replace(".tsx", "")
-          .replace("src/pages/", "/")
-          .replace("/index", "");
+          .replace(".ts", "");
+
+        // Handle App Router paths
+        if (path.startsWith("src/app/")) {
+          path = path
+            .replace("src/app/", "/")
+            .replace("/page", "")
+            .replace("/route", "");
+        }
+        // Handle Pages Router paths
+        else if (path.startsWith("src/pages/")) {
+          path = path
+            .replace("src/pages/", "/")
+            .replace("/index", "");
+        }
 
         // exclude dynamic routes
         if (path.includes("[") || path.includes("]")) {
           return "";
+        }
+
+        // Ensure path starts with /
+        if (!path.startsWith("/")) {
+          path = "/" + path;
         }
 
         return `<url>
@@ -35,6 +67,7 @@ async function generateSitemap() {
                         </url>
                     `;
       })
+      .filter(Boolean)
       .join("")}
         </urlset>
   `;

@@ -1,3 +1,5 @@
+"use client";
+
 import { Field, Form, Formik } from "formik";
 import * as Yup from "yup";
 import { Loader2Icon } from "lucide-react";
