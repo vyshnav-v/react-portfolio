@@ -13,6 +13,34 @@ import {
 import { siteMetadata } from "@/data/siteMetaData.mjs";
 
 export default function Footer() {
+  const socialLinks = [
+    {
+      href: siteMetadata.github,
+      label: "link to Github",
+      Icon: GithubIcon,
+    },
+    {
+      href: siteMetadata.linkedin,
+      label: "link to Linkedin",
+      Icon: LinkedinIcon,
+    },
+    {
+      href: siteMetadata.twitter,
+      label: "link to X",
+      Icon: TwitterIcon,
+    },
+    {
+      href: siteMetadata.instagram,
+      label: "link to Instagram",
+      Icon: InstagramIcon,
+    },
+    {
+      href: siteMetadata.facebook,
+      label: "link to Facebook",
+      Icon: FacebookIcon,
+    },
+  ].filter((item) => Boolean(item.href));
+
   return (
     <footer className="flex w-full flex-col items-center gap-20 bg-transparent px-6 py-8 sm:px-14 md:px-20">
       <div className="mx-auto flex w-full max-w-7xl flex-col gap-8 rounded-2xl bg-accent p-8 text-background sm:p-12 md:gap-12 lg:p-20">
@@ -70,51 +98,18 @@ export default function Footer() {
           ©{new Date().getFullYear()} Vaishnav V
         </span>
         <div className="flex gap-8">
-          <a
-            href={siteMetadata.github}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="h-6 w-6"
-            aria-label="link to Github"
-          >
-            <GithubIcon className="text-accent transition-colors duration-150 hover:text-accent-foreground" />
-          </a>
-          <a
-            href={siteMetadata.linkedin}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="h-6 w-6"
-            aria-label="link to Linkedin"
-          >
-            <LinkedinIcon className="text-accent transition-colors duration-150 hover:text-accent-foreground" />
-          </a>
-          <a
-            href={siteMetadata.twitter}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="h-6 w-6"
-            aria-label="link to Twitter"
-          >
-            <TwitterIcon className="text-accent transition-colors duration-150 hover:text-accent-foreground" />
-          </a>
-          <a
-            href={siteMetadata.instagram}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="h-6 w-6"
-            aria-label="link to Instagram"
-          >
-            <InstagramIcon className="text-accent transition-colors duration-150 hover:text-accent-foreground" />
-          </a>
-          <a
-            href={siteMetadata.facebook}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="h-6 w-6"
-            aria-label="link to Facebook"
-          >
-            <FacebookIcon className="text-accent transition-colors duration-150 hover:text-accent-foreground" />
-          </a>
+          {socialLinks.map(({ href, label, Icon }) => (
+            <a
+              key={label}
+              href={href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="h-6 w-6"
+              aria-label={label}
+            >
+              <Icon className="text-accent transition-colors duration-150 hover:text-accent-foreground" />
+            </a>
+          ))}
         </div>
       </div>
     </footer>

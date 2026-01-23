@@ -4,14 +4,13 @@ import Link from "next/link";
 import { motion, useScroll } from "framer-motion";
 
 export interface ExperienceListIconProps {
-  iconRef: RefObject<HTMLElement>;
+  iconRef: RefObject<HTMLLIElement | null>;
 }
 
 function ShowCaseLiIcon(props: ExperienceListIconProps) {
   const { scrollYProgress } = useScroll({
     target: props.iconRef,
     offset: ["center end", "center center"],
-    layoutEffect: false,
   });
   return (
     <figure className="absolute left-0 stroke-zinc-900">
@@ -51,7 +50,7 @@ export interface ExperienceShowcaseListItemProps {
 export default function ExperienceShowcaseListItem(
   props: ExperienceShowcaseListItemProps,
 ) {
-  const ref = useRef(null);
+  const ref = useRef<HTMLLIElement>(null);
   return (
     <li ref={ref} className="mx-auto mb-14 flex w-[60%] flex-col gap-1">
       <ShowCaseLiIcon iconRef={ref} />

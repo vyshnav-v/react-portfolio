@@ -7,17 +7,18 @@ const nextConfig = withBundleAnalyzer({
   output: process.env.BUILD_STANDALONE === "true" ? "standalone" : undefined,
   reactStrictMode: true,
   pageExtensions: ["ts", "tsx", "js"],
-  eslint: {
-    dirs: ["src"],
-  },
   images: {
-    domains: ["https://flagcdn.com"],
+    // Next.js 16 prefers remotePatterns over domains
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "flagcdn.com",
+      },
+    ],
   },
+  // Turbopack config (empty for now - webpack fallbacks still needed)
+  turbopack: {},
   webpack: (config) => {
-    config.module.rules.push({
-      test: /\.svg$/i,
-      use: ["@svgr/webpack"],
-    });
     config.resolve.fallback = {
       fs: false,
       net: false,
