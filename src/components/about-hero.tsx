@@ -6,6 +6,7 @@ import { AnimatePresence } from "framer-motion";
 import FadeUp from "@/animation/fade-up";
 import FadeRight from "@/animation/fade-right";
 import heroProfileImg from "@/public/images/heroProfile.png";
+import { siteMetadata } from "@/data/siteMetaData.mjs";
 import DuotoneImage from "./duotone-image";
 
 export default function AboutHero() {
@@ -67,7 +68,7 @@ export default function AboutHero() {
               />
             </div>
             <span className="text-lg font-medium text-foreground">
-              Kazhakkoottam, Trivandrum, Kerala, India
+              {siteMetadata.address}
             </span>
           </FadeRight>
         </AnimatePresence>

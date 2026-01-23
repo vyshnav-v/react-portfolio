@@ -19,27 +19,27 @@ async function generateSitemap() {
     <?xml version="1.0" encoding="UTF-8"?>
         <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
             ${pages
-              .map((page) => {
-                const path = page
-                  .replace(".tsx", "")
-                  .replace("src/pages/", "/")
-                  .replace("/index", "");
+      .map((page) => {
+        const path = page
+          .replace(".tsx", "")
+          .replace("src/pages/", "/")
+          .replace("/index", "");
 
-                // exclude dynamic routes
-                if (path.includes("[") || path.includes("]")) {
-                  return "";
-                }
+        // exclude dynamic routes
+        if (path.includes("[") || path.includes("]")) {
+          return "";
+        }
 
-                return `<url>
+        return `<url>
                             <loc>${siteMetadata.siteUrl}${path}</loc>
                         </url>
                     `;
-              })
-              .join("")}
+      })
+      .join("")}
         </urlset>
   `;
 
-  const formatted = prettier.format(sitemap, {
+  const formatted = await prettier.format(sitemap, {
     ...prettierConfig,
     parser: "html",
   });

@@ -1,7 +1,9 @@
 import { RefObject } from "react";
 
 export type CursorTrail = {
-  ref: RefObject<HTMLCanvasElement>;
+  // Allow a nullable canvas ref, which is what useRef<HTMLCanvasElement | null>()
+  // produces in React. We always guard with optional chaining when using it.
+  ref: RefObject<HTMLCanvasElement | null>;
   color?: string;
 };
 

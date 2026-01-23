@@ -22,7 +22,9 @@ export default function FadeRight({
     x: 0,
     transition: {
       duration,
-      ease: "easeInOut",
+      // Framer Motion v12 no longer accepts string easings like "easeInOut"
+      // Use a cubic-bezier tuple instead, typed as const to satisfy TypeScript.
+      ease: [0.42, 0, 0.58, 1] as const,
       delay,
     },
   };

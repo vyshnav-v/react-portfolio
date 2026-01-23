@@ -20,15 +20,16 @@ export default function FadeUp({
     y: 0,
     transition: {
       duration,
-      ease: "easeInOut",
+      // Use a numeric cubic-bezier easing compatible with Framer Motion v12
+      ease: [0.42, 0, 0.58, 1] as const,
       delay,
     },
   };
   return (
     <motion.div
       initial={{ y: 200, opacity: 0 }}
-      whileInView={whileInView ? animation : {}}
-      animate={!whileInView ? animation : {}}
+      whileInView={whileInView ? animation : undefined}
+      animate={!whileInView ? animation : undefined}
     >
       {children}
     </motion.div>
